@@ -61,7 +61,7 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 LOGIN_REDIRECT_URL = "/"
-LOGIN_EXEMPT_URLS = ["webhook", "favicon.ico", "status"]
+LOGIN_EXEMPT_URLS = ["contentful", "webhook", "favicon.ico", "status"]
 
 ROOT_URLCONF = 'wharf.urls'
 

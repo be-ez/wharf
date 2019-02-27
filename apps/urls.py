@@ -26,6 +26,7 @@ urlpatterns = [
     path('apps/<app_name>/check_domain/<task_id>', views.check_domain, name='check_domain'),
     path('logs/<task_id>', views.show_log, name='show_log'),
     path('webhook', views.github_webhook),
+    path('contentful', views.contentful_webhook),
     path('favicon.ico',
         RedirectView.as_view(
             url=staticfiles_storage.url('favicon.ico'),
